@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+    </head>
+    <style>
+        h1
+        {
+            text-shadow: 2px 6px 10px red;
+            text-align: center;
+            color: rgb(255, 192, 203);
+        }
+        marquee
+        {
+            background-color:rgba(255, 255, 0, 0.603);
+        }   
+        p 
+        {
+            color: rgba(255, 0, 0, 0.76);
+        }  
+        table
+        {
+           width: 80%;
+           box-shadow: 2px 8px 16px rgba(165, 42, 42, 0.603);
+        }
+        td
+        {
+            padding: 2%;
+        }
+        body
+        {
+            background-color: rgba(165, 42, 42, 0.397);
+        }
+
+    </style>
+    <body>
+        <h1><b>SUMSHODINI</b></h1>
+        <marquee behavior="scrolling" direction="left"><p>Be a part in sumshodini by registering.For more information <a href="https://www.kitsw.ac.in/">click here</a> (kitsw official website)</p></marquee>
+     <form action="servlet">
+         <br>
+       <table align="center">
+        <tr>
+            <td>Full Name </td>
+            <td> : <input type="text" id="fullname"></td>
+        </tr>
+        <tr>
+            <td>Roll No  </td>
+            <td> : <input type="text" id="rollno"></td> 
+        </tr>
+        <tr>
+            <td>Date </td>
+            <td> : <input type="date" id="date"></td>
+        </tr>
+        <tr>
+          <td>Branch </td>
+          <td> : <input type="text" id="branch"></td>
+        </tr>
+        <tr>
+            <td>Section</td>
+            <td> : <input type="text" id="section"></td>
+        </tr>
+        <tr>
+          <td>Gender </td>
+          <td> : <input type="radio" id="gender">male <input type="radio">female</td>
+        </tr>
+        <tr>
+          <td>Mail ID </td>
+          <td> : <input type="email" id="mail"></td>
+        </tr>
+        <tr>
+          <td> your photo</td>
+          <td> : <input type="file" id="file"></td>
+        </tr>
+       </table><br>
+       <table  align="center">
+           <tr>
+               <td>password</td>
+               <td> : <input type="password"  id=""></td>
+           </tr>
+           <tr>
+               <td>Retype password</td>
+               <td> : <input type="password" name="" id=""></td>
+           </tr>
+       </table><br><br>
+      <center><input type="submit" onclick="task(fullname.value,rollno.value,date.value,branch.value,section.value,gender.value)"></center>
+     </form>
+    </body>
+</html>
